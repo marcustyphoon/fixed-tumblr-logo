@@ -1,4 +1,4 @@
-<svg viewBox="0 0 21 36.8" width="20" height="33" fill="var(--white-on-dark)">
+<svg id="logo" viewBox="0 0 21 36.8" width="20" height="33" fill="var(--white-on-dark)">
 	<path
 		d="M21 36.75h-6.2c-5.577 0-9.733-2.844-9.733-9.646V16.21H0v-5.9C5.576 8.876 7.909 4.12 8.177 0h5.79v9.354h6.757v6.856h-6.756v9.486c0 2.843 1.448 3.826 3.753 3.826h3.271L21 36.75z">
 	</path>
@@ -15,10 +15,12 @@
 		<pattern id="pattern-rainbowColorList" x="0" y="0" width="400px" height="100%" patternUnits="userSpaceOnUse">
 			<rect x="0" y="0" width="200px" height="100%" fill="url(#gradient-rainbowColorList)">
 				<animate attributeType="XML" attributeName="x" from="0" to="200px" dur="1000ms"
+					begin="logo.mouseover" end="logo.mouseleave"
 					repeatCount="indefinite"></animate>
 			</rect>
 			<rect x="-200px" y="0" width="200px" height="100%" fill="url(#gradient-rainbowColorList)">
 				<animate attributeType="XML" attributeName="x" from="-200px" to="0" dur="1000ms"
+					begin="logo.mouseover" end="logo.mouseleave"
 					repeatCount="indefinite"></animate>
 			</rect>
 		</pattern>
